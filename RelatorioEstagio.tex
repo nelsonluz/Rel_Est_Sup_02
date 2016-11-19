@@ -23,6 +23,7 @@
 % \usepackage[T1]{fontenc}
 % % \usepackage{dropping}
 % \usepackage{graphicx}
+
 % \usepackage[hang,small,bf]{caption}
 % \usepackage[abnt-etal-list=0,abnt-etal-text=it,abnt-and-type=&,abnt-emphasize=bf,abnt-full-initials=yes,alf,bibjustif]{abntcite}
 % \usepackage{fancyhdr}
@@ -41,18 +42,19 @@
 % \usepackage{indentfirst}
 % \usepackage{color}
 % \usepackage{icomma}
-
+% \usepackage{natbib}
 \usepackage[utf8]{inputenc}
 \usepackage{indentfirst}
 \usepackage[brazilian]{babel}
 \usepackage{graphicx}
+\usepackage{placeins}
 \usepackage{listings}
 \usepackage{listingsutf8}
 %\usepackage{hyperref}
 \usepackage{url}
 \usepackage[T1]{fontenc}
 \usepackage{spverbatim}
-\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{fancyvrb,graphicx, color}
 \usepackage{tabularx}
 \usepackage{array}
@@ -84,21 +86,21 @@
     \newpage
     \input{relatorio/folhaderosto.tex}
     \newpage
-    \input{relatorio/folhadeaprovacao.tex}
-    \newpage
+%     \input{relatorio/folhadeaprovacao.tex}
+%     \newpage
     
     \tableofcontents  
     \newpage
-    \section*{Introdução}
+    \chapter{Introdução}
     \input{relatorio/Introducao.tex}
-    \section*{Localização e caracterização do ambiente escolar}
+    \chapter{Localização e caracterização do ambiente escolar}
     \input{relatorio/Cap01.tex}  
-    \section*{Reflexões teórico metodológicas}
+    \chapter{Reflexões teórico metodológicas}
     \input{relatorio/Cap02.tex}
-    \section*{As estratégias de ensino}
+    \chapter{As estratégias de ensino}
     \input{relatorio/Cap03.tex}
-    \section*{Observação em sala de aula e co-regência}
+    \chapter{Observação em sala de aula e co-regência}
     \input{relatorio/Cap04.tex}
-    %\bibliographystyle{pain}
-    %\bibliography{trabalho/ref_trab_foto}
+    \bibliographystyle{apalike}
+    \bibliography{referencias}
 \end{document}
