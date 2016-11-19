@@ -1,48 +1,5 @@
-% \documentclass[12pt,a4paper]{article}
-% \usepackage[utf8]{inputenc}
-% \usepackage{indentfirst}
-% \usepackage[brazilian]{babel}
-% \usepackage{graphicx}
-% \usepackage{listings}
-% \usepackage{listingsutf8}
-% %\usepackage{hyperref}
-% \usepackage{url}
-% \usepackage[T1]{fontenc}
-% \usepackage{spverbatim}
-% \usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
-% \usepackage{fancyvrb,graphicx, color}
-% \usepackage{tabularx}
-% \usepackage{array}
-% \usepackage{cite}
-% \usepackage{subfigure}
 \documentclass[ruledheader,noindentfirst,anapcustomindent,abntfigtabnum,tocpage=plain]{abnt}
 \usepackage{amsmath, amssymb, amsthm, verbatim, amsfonts, amstext}
-% \usepackage[latin1]{inputenc}
-% \usepackage[brazilian]{babel}
-% % \usepackage[utf8]{inputenc}
-% \usepackage[T1]{fontenc}
-% % \usepackage{dropping}
-% \usepackage{graphicx}
-
-% \usepackage[hang,small,bf]{caption}
-% \usepackage[abnt-etal-list=0,abnt-etal-text=it,abnt-and-type=&,abnt-emphasize=bf,abnt-full-initials=yes,alf,bibjustif]{abntcite}
-% \usepackage{fancyhdr}
-% \usepackage{makeidx}
-% \usepackage[none]{hyphenat}
-% \usepackage{color}
-% \usepackage{subfig}
-% \usepackage{algorithms}
-% \usepackage{algorithmic}
-% \usepackage{mdwlist}
-% \usepackage{bm}
-% \usepackage[titletoc,title]{appendix}
-% \usepackage{ltxtable}
-% \usepackage{longtable}
-% \usepackage{supertabular}
-% \usepackage{indentfirst}
-% \usepackage{color}
-% \usepackage{icomma}
-% \usepackage{natbib}
 \usepackage[utf8]{inputenc}
 \usepackage{indentfirst}
 \usepackage[brazilian]{babel}
@@ -50,7 +7,6 @@
 \usepackage{placeins}
 \usepackage{listings}
 \usepackage{listingsutf8}
-%\usepackage{hyperref}
 \usepackage{url}
 \usepackage[T1]{fontenc}
 \usepackage{spverbatim}
@@ -60,14 +16,11 @@
 \usepackage{array}
 \usepackage{cite}
 \usepackage{subfigure}
-
-% \usepackage[abnt-etal-list=0,abnt-etal-text=it,abnt-and-type=&,abnt-emphasize=bf,abnt-full-initials=yes,alf,bibjustif]{abntcite}
 \usepackage{fancyhdr}
 \usepackage{makeidx}
 \usepackage[none]{hyphenat}
 \usepackage{color}
 \usepackage{subfig}
-% \usepackage{algorithms}
 \usepackage{algorithmic}
 \usepackage{mdwlist}
 \usepackage{bm}
@@ -78,8 +31,10 @@
 \usepackage{indentfirst}
 \usepackage{color}
 \usepackage{icomma}
+\usepackage{pdfpages}
 
 \begin{document}
+%     \onehalfspace
     \definecolor{aquamarine}{rgb}{0.5, 1.0, 0.83}
     \input{relatorio/capaestagio.tex}
 	\newpage\
@@ -101,6 +56,9 @@
     \input{relatorio/Cap03.tex}
     \chapter{Observação em sala de aula e co-regência}
     \input{relatorio/Cap04.tex}
+
     \bibliographystyle{apalike}
     \bibliography{referencias}
+    \anexo
+    \includepdf[pages=2-]{EST_GIO_SUPERVISIONADO__RELAT_RIO_DE_EST_GIO_SUPERVISIONADO_EM_GEOGRAFIA_III_REG_NCIA_DE_CLASSE.pdf}    
 \end{document}
